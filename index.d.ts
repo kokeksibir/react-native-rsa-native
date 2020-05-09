@@ -21,7 +21,7 @@ declare module 'react-native-rsa-native' {
 	}
 
 	namespace RSAKeychain {
-		export function generate(keyTag: string, keySize: number): Promise<PublicKey>;
+		export function generate(keyTag: string): Promise<PublicKey>;
 		export function generateKeys(keyTag: string, keySize: number): Promise<PublicKey>;
 		export function deletePrivateKey(keyTag: string): Promise<boolean>;
 		export function encrypt(data: string, keyTag: string): Promise<string>;
